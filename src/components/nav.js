@@ -15,22 +15,24 @@ const StyledNavigation = styled.nav.attrs({
 	text-align: center;
 `;
 
-export default function Nav(props) {
-	return(
-		<StyledNavigation>
-			<div className="nav-contents col-8 clear-float center tl">
-				<div className="image-wrapper dib">
-					<img className="" src={Logo} />
+export default class Nav extends React.Component {
+	render() {
+		return(
+			<StyledNavigation>
+				<div className="nav-contents col-8 clear-float center tl">
+					<div className="image-wrapper dib">
+						<img className="" src={Logo} />
+					</div>
+					<ul className="dib fr mh3 mv0 list">
+						<li className="dib">
+							<a href="#">Match Me</a>
+						</li>
+						<li className="dib">
+							<a href="#">Log In</a>
+						</li>
+					</ul>
 				</div>
-				<ul className="dib fr mh3 mv0 list">
-					<li className="dib">
-						<a href="#">Match Me</a>
-					</li>
-					<li className="dib">
-						<a href="#">Log In</a>
-					</li>
-				</ul>
-			</div>
-		</StyledNavigation>
-	)
+			</StyledNavigation>
+		)
+	}
 } 

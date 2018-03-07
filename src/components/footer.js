@@ -13,10 +13,12 @@ const StyledFooter = styled.footer.attrs({
 	padding: 1rem;
 `;
 
-export default function Footer(props) {
-	return(
-		<StyledFooter>
-			This is a footer
-		</StyledFooter>
-	)
+export default class Footer extends React.Component {
+	render() {
+		return(
+			<StyledFooter>
+				This is a footer
+			</StyledFooter>
+		)
+	}
 }

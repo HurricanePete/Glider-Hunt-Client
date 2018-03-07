@@ -8,7 +8,7 @@ export default function Hero(props) {
 	return(
 		<section className="col-8 clear-float center tc pv4">
 			<header className="pt5">
-				<img src={Logo} />
+				<img src={Logo} alt="demo" />
 				<h1>Glider Hunt</h1>
 			</header>
 			<form className="search-form w-50 center" action="#">

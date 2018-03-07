@@ -21,14 +21,14 @@ export default class Nav extends React.Component {
 			<StyledNavigation>
 				<div className="nav-contents col-8 clear-float center tl">
 					<div className="image-wrapper dib">
-						<img className="" src={Logo} />
+						<img className="" src={Logo} alt="Glider Hunt Logo" />
 					</div>
 					<ul className="dib fr mh3 mv0 list">
 						<li className="dib">
-							<a href="#">Match Me</a>
+							<a href="/">Match Me</a>
 						</li>
 						<li className="dib">
-							<a href="#">Log In</a>
+							<a href="/">Log In</a>
 						</li>
 					</ul>
 				</div>

@@ -1,0 +1,29 @@
+nav {
+	background-color: lightskyblue;
+}
+
+div.nav-contents {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+div.nav-contents > div.image-wrapper {
+	height: 55px;
+	width: 55px;
+}
+
+nav ul > li {
+	display: inline-block;
+	padding: 0 1rem 0 0;
+}
+
+nav ul > li:after {
+	padding-left: 1rem;
+	content: '|';
+}
+
+nav ul > li:last-child:after {
+	padding: 0;
+	content: '';
+}

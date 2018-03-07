@@ -1,0 +1,26 @@
+form.search-form {
+	border: 1px solid grey;
+	box-shadow: 0 2px 3px lightgrey;
+}
+
+input.search {
+	width: 90%;
+	border: none;
+}
+
+input.search:focus {
+	outline: none;
+}
+
+button.submit {
+	border: none;
+	width: 10%;
+	background-color: white;
+	transition: all 0.25s ease-out;
+}
+
+button.submit:hover {
+	background-color: green;
+	color: white;
+	cursor: pointer;
+}

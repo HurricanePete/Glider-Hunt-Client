@@ -6,12 +6,11 @@ import './styles/nav.css';
 import Logo from './static-photos/favicon.png';
 
 const StyledNavigation = styled.nav.attrs({
-	className: "fixed"
+	className: ""//fixed"
 })`
-	height: 5rem;
+	height: 56px;
 	width: 100%;
-	border-bottom: 2px solid black;
-	padding: 1rem;
+	padding: 0.5rem;
 	text-align: center;
 `;
 
@@ -20,13 +19,10 @@ export default class Nav extends React.Component {
 		return(
 			<StyledNavigation>
 				<div className="nav-contents col-8 clear-float center tl">
-					<div className="image-wrapper dib">
+					<div className="image-wrapper dib" title="Home">
 						<img className="" src={Logo} alt="Glider Hunt Logo" />
 					</div>
 					<ul className="dib fr mh3 mv0 list">
-						<li className="dib">
-							<a href="/">Match Me</a>
-						</li>
 						<li className="dib">
 							<a href="/">Log In</a>
 						</li>

@@ -2,6 +2,7 @@ import React from 'react';
 
 import Nav from './nav';
 import Hero from './hero';
+import BrowseBy from './browseBy';
 import Featured from './featured';
 import Footer from './footer';
 
@@ -13,8 +14,9 @@ export default class App extends React.Component {
         return(
             <div>
                 <Nav />
-                <main className="row">
+                <main className="">
                   <Hero />
+                  <BrowseBy />
                   <Featured />
                 </main>
                 <Footer />

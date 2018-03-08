@@ -17,7 +17,7 @@ export default class Footer extends React.Component {
 	render() {
 		return(
 			<StyledFooter>
-				This is a footer
+				<p>Brand and Size images taken from <a href="http://xcmag.com/news/2010-prize-draw/">http://xcmag.com/news/2010-prize-draw/</a> and <a href="https://www.tutorialspoint.com/paragliding/paragliding_flying_types.htm">https://www.tutorialspoint.com/paragliding/paragliding_flying_types.htm</a></p>
 			</StyledFooter>
 		)
 	}

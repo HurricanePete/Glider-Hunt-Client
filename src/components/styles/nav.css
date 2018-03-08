@@ -1,5 +1,5 @@
 nav {
-	background-color: lightskyblue;
+	background-color: #00203a;
 }
 
 div.nav-contents {
@@ -8,12 +8,17 @@ div.nav-contents {
 	align-items: center;
 }
 
-div.nav-contents > div.image-wrapper {
-	height: 55px;
-	width: 55px;
+div.image-wrapper {
+	height: 40px;
+	width: 40px;
+}
+
+div.image-wrapper:hover {
+	cursor: pointer;
 }
 
 nav ul > li {
+	color: white;
 	display: inline-block;
 	padding: 0 1rem 0 0;
 }
@@ -26,4 +31,8 @@ nav ul > li:after {
 nav ul > li:last-child:after {
 	padding: 0;
 	content: '';
+}
+
+nav ul > li > a:visited {
+	color: white;
 }

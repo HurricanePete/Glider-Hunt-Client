@@ -1,6 +1,17 @@
+section.hero {
+	border-bottom: 1px solid #00203a;
+}
+
+div.hero-wrapper {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
 form.search-form {
 	border: 1px solid grey;
 	box-shadow: 0 2px 3px lightgrey;
+	height: 36px;
 }
 
 input.search {
@@ -23,4 +34,33 @@ button.submit:hover {
 	background-color: green;
 	color: white;
 	cursor: pointer;
+}
+
+ul.hero-list {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+li.hero-link {
+	display: inline-block;
+	min-width: 33.333%;
+	padding: 0.5rem 1rem;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+li.hero-link:first-child {
+	border-left: none;
+}
+
+li.hero-link:last-child {
+	border-right: none;
+}
+
+@media only screen and (max-width: 1000px) {
+	h2.logo-name {
+		display: none;
+	}
 }

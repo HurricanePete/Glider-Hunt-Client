@@ -1,11 +1,19 @@
+* {
+	font-family: 'Poppins', sans-serif;
+}
+
 html {
   min-height: 100%;
   position: relative;
 }
 
 main {
-  padding-top: 80px;
+  /*padding-top: 56px;*/
   padding-bottom: 5rem;
+}
+
+a {
+	text-decoration: none;
 }
 
 div.image-wrapper {
@@ -13,4 +21,12 @@ div.image-wrapper {
     background-color: white;
     padding: 0.45rem;
     border-radius: 50%;
+}
+
+.parallax-glider {
+	background-image: url('../static-photos/parallax_glide_edit.jpeg');
+	background-attachment: fixed;
+	background-position: 0 -500px;
+	background-repeat: no-repeat;
+	background-size: cover;
 }

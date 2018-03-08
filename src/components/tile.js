@@ -9,7 +9,7 @@ export default function Tile(props) {
 				Image
 				</div>
 				<div className="w-50 h3 dib pa3">
-				Important Facts
+				Specs
 				</div>
 				<div className="h3 bt pa3">
 				Comments

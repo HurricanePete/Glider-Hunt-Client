@@ -1,0 +1,72 @@
+div.browser-wrapper {
+	display: block;
+}
+
+h1.desktop-title {
+	display: none;
+}
+
+div.browser-tile {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+	height: 250px;
+	border: 3px solid #00203a;
+	border-radius: 10px;
+	overflow: hidden;
+	z-index: 1;
+	transition: all 0.25s ease-in-out;
+}
+
+div.browser-tile:hover {
+	cursor: pointer;
+	box-shadow: 0 3px 25px black
+}
+
+div.browser-tile > h2 {
+	color: #00203a;
+	text-transform: uppercase;
+	margin: 0;
+	font-size: 3vw;
+	font-family: 'Archivo Black', sans-serif;
+}
+
+.brands:after, .sizes:after, .match:after {
+	content: '';
+	opacity: 0.35;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: -1;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.brands:after {
+	background-image: url(../static-photos/glider-brands.jpg);
+}
+
+.sizes:after {
+	background-image: url(../static-photos/glider-sizes.jpg);
+}
+
+.match:after {
+	background-image: url(../static-photos/checklist.png);
+}
+
+@media only screen and (min-width: 1000px) {
+	div.browser-wrapper {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: baseline;
+	}
+
+	h1.desktop-title {
+		font-size: 2vw;
+		display: block;
+	}
+}

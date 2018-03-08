@@ -1,8 +1,8 @@
 import React from 'react';
 
-import Brand from './static-photos/glider-brands.jpg';
-import Sizes from './static-photos/glider-sizes.jpg';
-import Match from './static-photos/checklist.png';
+// import Brand from './static-photos/glider-brands.jpg';
+// import Sizes from './static-photos/glider-sizes.jpg';
+// import Match from './static-photos/checklist.png';
 
 import './styles/browseBy.css';
 

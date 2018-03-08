@@ -2,7 +2,7 @@ import React from 'react';
 
 import './styles/hero.css';
 
-import Logo from './static-photos/nav-icon.png';
+//import Logo from './static-photos/nav-icon.png';
 
 //<img src={Logo} alt="demo" />
 

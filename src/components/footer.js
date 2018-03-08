@@ -11,6 +11,7 @@ const StyledFooter = styled.footer.attrs({
 	border-top: 2px solid black;
 	text-align: center;
 	padding: 1rem;
+	overflow: hidden;
 `;
 
 export default class Footer extends React.Component {

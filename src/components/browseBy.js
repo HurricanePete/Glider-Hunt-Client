@@ -11,18 +11,21 @@ import './styles/browseBy.css';
 export default class BrowseBy extends React.Component {
 	render() {
 		return(
-			<section className="row tc pv3 parallax-glider">
+			<section className="browser-row row tc pv3">
 				<h1 className="desktop-title">Whether this is your first time or you're an old hand, this is the place to find your glider</h1>
 				<h2>Browse by...</h2>
 				<div className="browser-wrapper pb4">
 					<div className="browser-tile brands col-3 dib">
 						<h2>Brand</h2>
+						<span className="db">Browse <i className="fas fa-angle-right"></i></span>
 					</div>
 					<div className="browser-tile sizes col-3 dib">
-						<h2>Size</h2>	
+						<h2>Size</h2>
+						<span className="db">Browse <i className="fas fa-angle-right"></i></span>	
 					</div>
 					<div className="browser-tile match col-3 dib">
 						<h2>Match Me</h2>
+						<span className="db">Browse <i className="fas fa-angle-right"></i></span>
 					</div>
 				</div>
 			</section>

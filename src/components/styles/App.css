@@ -25,6 +25,7 @@ div.image-wrapper {
 
 .parallax-glider {
 	background-image: url('../static-photos/parallax_glide_edit.jpeg');
+  height: 500px;
 	background-attachment: fixed;
 	/*background-position: 0 -500px;*/
 	background-repeat: no-repeat;

@@ -17,6 +17,7 @@ export default class App extends React.Component {
                 <main className="">
                   <Hero />
                   <BrowseBy />
+                  <div className="parallax-glider"></div>
                   <Featured />
                 </main>
                 <Footer />

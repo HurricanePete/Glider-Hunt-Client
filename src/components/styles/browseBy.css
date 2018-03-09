@@ -1,3 +1,8 @@
+section.browser-row {
+	background-color: #00203a;
+	color: white;
+}
+
 div.browser-wrapper {
 	display: block;
 }
@@ -9,28 +14,40 @@ h1.desktop-title {
 div.browser-tile {
 	position: relative;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
 	background-color: white;
+	color: #00203a;
 	height: 250px;
-	border: 3px solid #00203a;
 	border-radius: 10px;
 	overflow: hidden;
 	z-index: 1;
-	transition: all 0.25s ease-in-out;
+	transition: all 0.25s ease-out;
 }
 
 div.browser-tile:hover {
 	cursor: pointer;
-	box-shadow: 0 3px 25px black
+	box-shadow: 0 2px 22px lightgrey;
+    transform: translateY(-5px);
 }
 
 div.browser-tile > h2 {
-	color: #00203a;
+	width: 100%;
 	text-transform: uppercase;
 	margin: 0;
 	font-size: 50px;
 	font-family: 'Archivo Black', sans-serif;
+}
+
+div.browser-tile > span {
+	font-weight: bold;
+    position: absolute;
+    bottom: 9px;
+}
+
+div.browser-tile > span > i {
+	vertical-align: middle;
 }
 
 .brands:after, .sizes:after, .match:after {

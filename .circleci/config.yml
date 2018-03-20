@@ -37,19 +37,21 @@ jobs:
       - run: npm test
 
   deploy: 
-        machine:
-          enabled: true
-        working_directory: ~/repo
-        steps:
-          - checkout
-          - run:
-            name: Before deploy
-            command: |
-              npm install netlify-cli -g
-              npm run build
-          - run:
-            name: Deployment
-            command: netlify deploy -s $NETLIFY_SITE_ID -t $NETLIFY_ACCESS_TOKEN -p ./build
+    docker:
+      - image: circleci/node:7.10
+
+      working_directory: ~/repo
+      
+      steps:
+         - checkout
+         - run:
+           name: Before deploy
+           command: |
+             npm install netlify-cli -g
+             npm run build
+         - run:
+           name: Deployment
+           command: netlify deploy -s $NETLIFY_SITE_ID -t $NETLIFY_ACCESS_TOKEN -p ./build
 
 
 

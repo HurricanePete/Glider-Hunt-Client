@@ -1,5 +1,6 @@
 section.hero {
 	border-bottom: 1px solid #00203a;
+	background-image: url(../static-photos/top-shot.jpeg);
 }
 
 div.hero-wrapper {

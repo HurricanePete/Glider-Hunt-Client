@@ -55,16 +55,16 @@ jobs:
 
 
 workflows:
-version: 1
-build-and-deploy:
-  jobs:
-    - build
-    - deploy:
-      requires:
-        - build
-      filters:
-        branches:
-          only: master
+  version: 1
+  build-and-deploy:
+    jobs:
+      - build
+      - deploy:
+        requires:
+          - build
+        filters:
+          branches:
+            only: master
 
 
 

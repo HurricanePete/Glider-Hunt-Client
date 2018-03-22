@@ -20,7 +20,7 @@ import './styles/hero.css';
 export default function Hero(props) {
 	return(
 		<section className="hero row pv3">
-			<h1 className="logo-name ma0">Get Your wings</h1>
+			<h1 className="logo-name ma0">Get Your wings . . .</h1>
 			<div className="hero-wrapper col-4 clear-float center tc">
 				<input className="search pv2 ph3" type="search" />
 				<button className="submit pv2 ph2" type="submit">Match Me</button> 

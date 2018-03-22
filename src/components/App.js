@@ -17,11 +17,13 @@ export default class App extends React.Component {
                 <main className="">
                   <Hero />
                   <BrowseBy />
-                  <div className="parallax-glider">
-                    <div className="darken">
-                      <EmailForm />
+                  <section className="db">
+                    <div className="parallax-glider">
+                      <div className="darken">
+                        <EmailForm />
+                      </div>
                     </div>
-                  </div>
+                  </section>
                 </main>
                 <Footer />
             </div>

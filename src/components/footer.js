@@ -8,10 +8,7 @@ import Logo from './static-photos/nav-icon.png';
 const StyledFooter = styled.footer.attrs({
 	className: ""
 })`
-	position: absolute;
-	bottom: 0;
 	width: 100%;
-	height: 7rem;
 	border-top: 2px solid black;
 	background-color: black;
 	color: white;
@@ -25,7 +22,7 @@ export default class Footer extends React.Component {
 	render() {
 		return(
 			<StyledFooter>
-				<div className="nav-contents col-8 clear-float">
+				<div className="footer-contents col-8 clear-float">
 					<div className="logo dib">
 						<div className="image-wrapper dib" title="Home">
 							<img className="" src={Logo} alt="Glider Hunt Logo" />

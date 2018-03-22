@@ -4,35 +4,76 @@ nav {
 
 div.nav-contents {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
+	padding: 1rem 2rem;
 }
 
-div.image-wrapper {
-	height: 40px;
-	width: 40px;
+nav ul hr {
+	display: none;
 }
 
-div.image-wrapper:hover {
-	cursor: pointer;
-}
-
+/*messy hover styling for nav links -- needs cleaning*/
 nav ul > li {
-	color: white;
+	position: relative;
 	display: inline-block;
-	padding: 0 1rem 0 0;
+	text-transform: uppercase;	
 }
 
-nav ul > li:after {
-	padding-left: 1rem;
+nav ul > li > a {
+	display: inline-block;
+	margin: 0 2rem;
+	padding-bottom: 2px;
+	color: white;
+	font-size: 18px;
+	letter-spacing: 0.75px;
+	transition: all 0.75s ease;
+}
+
+nav ul > li > a::after {
+	content: '';
+	position: absolute;
+	left: 1.8rem;
+	right: 2rem;
+	bottom: 0;
+	width: 0px;
+	height: 2px;
+	background-color: white;
+	transition: all 0.5s ease-out 0s;
+	z-index: -1;
+}
+
+nav ul > li > a:hover::after {
+	width: calc(100% - 3.8rem);
+}
+
+nav ul > li::after {
 	content: '|';
 }
 
-nav ul > li:last-child:after {
-	padding: 0;
+nav ul > li:last-child::after {
 	content: '';
 }
 
-nav ul > li > a:visited {
-	color: white;
+@media only screen and (max-width: 1000px) {
+	div.nav-contents {
+		padding: 1rem;
+	}
+
+	nav ul hr {
+		display: block;
+	}
+
+	nav ul > li:after {
+		display: none;
+	}
+
+	nav ul > li:first-child {
+		margin-top: 1rem;
+	}
+
+	nav ul > li:last-child {
+		margin-bottom: 	0;
+		padding-bottom: 1rem;
+	}
 }

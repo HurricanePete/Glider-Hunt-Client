@@ -1,11 +1,42 @@
 section.hero {
 	border-bottom: 1px solid #00203a;
+	background-image: url(../static-photos/top-shot_edit.jpeg);
+	height: calc(98vh - 72px);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+section.hero > h1, section.hero > h2  {
+	color: white;
+	line-height: 1.5;
+	letter-spacing: 1px;
+}
+
+section.hero > h1{
+	font-size: 70px;
+	font-weight: bold;}
+
+section.hero > h2 {
+	margin: 2rem;
 }
 
 div.hero-wrapper {
-	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
+    border-radius: 2px;
+    background-color: rgba(0,0,0,0.6);
+    padding: 2rem 1rem;
+    box-shadow: 0px 0px 3px ghostwhite;
+    min-width: 	400px;
+    color: white;
+}
+
+div.hero-wrapper > h3 {
+	margin: 0 auto 1rem auto;
+	font-size: 16px;
+	font-weight: 100;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
 }
 
 form.search-form {
@@ -15,25 +46,21 @@ form.search-form {
 }
 
 input.search {
-	width: 90%;
 	border: none;
+	margin-right: 6px;
 }
 
-input.search:focus {
+input.search::placeholder {
+	opacity: 0.75;
+}
+
+input.search::focus {
 	outline: none;
 }
 
-button.submit {
-	border: none;
-	width: 10%;
-	background-color: white;
-	transition: all 0.25s ease-out;
-}
-
-button.submit:hover {
-	background-color: green;
-	color: white;
-	cursor: pointer;
+button.match {
+	width: 70%;
+	padding: 0.75rem 1rem;
 }
 
 ul.hero-list {
@@ -60,7 +87,11 @@ li.hero-link:last-child {
 }
 
 @media only screen and (max-width: 1000px) {
-	h2.logo-name {
-		display: none;
+	div.hero-wrapper {
+		min-width: unset;
+	}
+
+	section.hero > h1 {
+		font-size: 	calc(100vw / 10);
 	}
 }

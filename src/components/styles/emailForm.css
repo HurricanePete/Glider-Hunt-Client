@@ -1,0 +1,39 @@
+form.signup {
+	text-align: center;
+}
+
+form.signup > h2 {
+	color: white;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+form.signup > input {
+	width: 65%;
+	padding: 1rem;
+	font-size: 25px;
+	background-color: rgba(0,0,0,0.5);
+	color: white;
+	border: none;
+	margin-right: 8px;
+}
+
+form.signup > input::placeholder {
+	color: lightgrey;
+}
+
+form.signup > button {
+	padding: 1rem 2rem;
+	font-size: 25px;
+}
+
+@media only screen and (max-width: 1000px) {
+	form.signup > input {
+		width: 100%;
+    	margin-bottom: 8px;
+	}
+
+	form.signup > button {
+		width: 100%;
+	}
+} 

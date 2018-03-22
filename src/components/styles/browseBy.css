@@ -1,39 +1,58 @@
-div.browser-wrapper {
-	display: block;
+section.browser-row {
+	background-color: #00203a;
+	color: white;
 }
 
-h1.desktop-title {
-	display: none;
+div.browser-wrapper {
+	display: block;
+	position: relative;
+}
+
+h2.desktop-title {
+	font-size: 28px;
+	font-weight: 100;
 }
 
 div.browser-tile {
 	position: relative;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
 	background-color: white;
+	color: #00203a;
 	height: 250px;
-	border: 3px solid #00203a;
 	border-radius: 10px;
 	overflow: hidden;
 	z-index: 1;
-	transition: all 0.25s ease-in-out;
+	transition: all 0.25s ease-out;
 }
 
 div.browser-tile:hover {
 	cursor: pointer;
-	box-shadow: 0 3px 25px black
+	box-shadow: 0 2px 22px lightgrey;
+    transform: translateY(-5px);
 }
 
 div.browser-tile > h2 {
-	color: #00203a;
+	width: 100%;
 	text-transform: uppercase;
 	margin: 0;
-	font-size: 3vw;
+	font-size: 50px;
 	font-family: 'Archivo Black', sans-serif;
 }
 
-.brands:after, .sizes:after, .match:after {
+div.browser-tile > span {
+	font-weight: bold;
+    position: absolute;
+    bottom: 9px;
+}
+
+div.browser-tile > span > i {
+	vertical-align: middle;
+}
+
+.training:after, .gear:after {
 	content: '';
 	opacity: 0.35;
 	top: 0;
@@ -46,16 +65,12 @@ div.browser-tile > h2 {
 	background-size: cover;
 }
 
-.brands:after {
+.training:after {
 	background-image: url(../static-photos/glider-brands.jpg);
 }
 
-.sizes:after {
+.gear:after {
 	background-image: url(../static-photos/glider-sizes.jpg);
-}
-
-.match:after {
-	background-image: url(../static-photos/checklist.png);
 }
 
 @media only screen and (min-width: 1000px) {
@@ -63,10 +78,5 @@ div.browser-tile > h2 {
 		display: flex;
 		justify-content: space-evenly;
 		align-items: baseline;
-	}
-
-	h1.desktop-title {
-		font-size: 2vw;
-		display: block;
 	}
 }

@@ -31,10 +31,10 @@ export default class Footer extends React.Component {
 					</div>
 					<ul className="footer-list list">
 						<li className="footer-links">
-							<a href="#">About</a>
+							<a href="/">About</a>
 						</li>
 						<li className="footer-links">
-							<a href="#">Contact Us</a>
+							<a href="/">Contact Us</a>
 						</li>
 					</ul>
 				</div>

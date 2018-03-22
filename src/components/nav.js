@@ -30,7 +30,7 @@ export default class Nav extends React.Component {
 	render() {
 		const show = this.state.menuToggle;
 		return(
-			<StyledNavigation display={show}>
+			<StyledNavigation display={show ? 1 : 0}>
 				<div className={"nav-contents col-12 clear-float center tl " + (show ? "bb bw1 b--white" : "")}>
 					<div className="logo dib">
 						<div className="image-wrapper dib" title="Home">

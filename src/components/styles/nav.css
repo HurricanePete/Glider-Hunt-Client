@@ -21,6 +21,7 @@ nav ul hr {
 	display: none;
 }
 
+/*messy hover styling for nav links -- needs cleaning*/
 nav ul > li {
 	position: relative;
 	display: inline-block;

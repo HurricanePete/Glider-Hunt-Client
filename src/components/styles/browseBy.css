@@ -5,10 +5,12 @@ section.browser-row {
 
 div.browser-wrapper {
 	display: block;
+	position: relative;
 }
 
-h1.desktop-title {
-	display: none;
+h2.desktop-title {
+	font-size: 28px;
+	font-weight: 100;
 }
 
 div.browser-tile {
@@ -50,7 +52,7 @@ div.browser-tile > span > i {
 	vertical-align: middle;
 }
 
-.brands:after, .sizes:after, .match:after {
+.training:after, .gear:after {
 	content: '';
 	opacity: 0.35;
 	top: 0;
@@ -63,16 +65,12 @@ div.browser-tile > span > i {
 	background-size: cover;
 }
 
-.brands:after {
+.training:after {
 	background-image: url(../static-photos/glider-brands.jpg);
 }
 
-.sizes:after {
+.gear:after {
 	background-image: url(../static-photos/glider-sizes.jpg);
-}
-
-.match:after {
-	background-image: url(../static-photos/checklist.png);
 }
 
 @media only screen and (min-width: 1000px) {
@@ -80,10 +78,5 @@ div.browser-tile > span > i {
 		display: flex;
 		justify-content: space-evenly;
 		align-items: baseline;
-	}
-
-	h1.desktop-title {
-		font-size: 2vw;
-		display: block;
 	}
 }

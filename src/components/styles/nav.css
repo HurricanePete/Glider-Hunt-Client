@@ -17,39 +17,31 @@ div.nav-contents {
 	padding: 1rem 2rem;
 }
 
-div.logo {
-	display: flex;
-	align-items: center;
-}
-
-div.image-wrapper {
-	height: 40px;
-	width: 40px;
-}
-
-div.image-wrapper:hover {
-	cursor: pointer;
-}
-
 nav ul hr {
 	display: none;
 }
 
 nav ul > li {
+	position: relative;
 	display: inline-block;
 	text-transform: uppercase;	
 }
 
 nav ul > li > a {
 	display: inline-block;
+	margin: 0 2rem;
+	padding-bottom: 2px;
 	color: white;
+	font-size: 18px;
+	letter-spacing: 0.75px;
 	transition: all 0.75s ease;
 }
 
 nav ul > li > a::after {
 	content: '';
 	position: absolute;
-	left: 0;
+	left: 1.8rem;
+	right: 2rem;
 	bottom: 0;
 	width: 0px;
 	height: 2px;
@@ -59,16 +51,14 @@ nav ul > li > a::after {
 }
 
 nav ul > li > a:hover::after {
-	width: calc(100% - 4.01rem);
+	width: calc(100% - 3.8rem);
 }
 
 nav ul > li::after {
-	margin: 0 2rem;
 	content: '|';
 }
 
 nav ul > li:last-child::after {
-	padding: 0;
 	content: '';
 }
 
@@ -83,6 +73,10 @@ nav ul > li:last-child::after {
 
 	nav ul > li:after {
 		display: none;
+	}
+
+	nav ul > li:first-child {
+		margin-top: 1rem;
 	}
 
 	nav ul > li:last-child {

@@ -8,11 +8,8 @@ const MenuListItem = styled.li.attrs({
 	z-index: 0;
 	transition: all 0.25s ease-in-out;
 
-
-
 	@media (max-width: 1000px) {
 		display: block;
-		margin: 1rem 0;
 	}
 `;
 
@@ -21,19 +18,19 @@ export default class MenuItem extends React.Component {
 		return(
 			<ul className="ma0 pa0" >
 				<MenuListItem>
-					<a href="/"><i className="fas fa-search"></i></a>
+					<a className="ul-hover" href="/"><i className="fas fa-search"></i></a>
 				</MenuListItem>
 				<hr className="w-25"/>
 				<MenuListItem>
-					<a href="/">Reviews</a>
+					<a className="ul-hover" href="/">Reviews</a>
 				</MenuListItem>
 				<hr className="w-25"/>
 				<MenuListItem>
-					<a href="/">Blog</a>
+					<a className="ul-hover" href="/">Blog</a>
 				</MenuListItem>
 				<hr className="w-25"/>
 				<MenuListItem>
-					<a href="/">Login</a>
+					<a className="ul-hover" href="/">Login</a>
 				</MenuListItem>
 			</ul>
 		)

@@ -36,7 +36,7 @@ export default class Nav extends React.Component {
 						<div className="image-wrapper dib" title="Home">
 							<img className="" src={Logo} alt="Glider Hunt Logo" />
 						</div>
-						<h2 className="mh3 mv0 dib white">Glider Hunt</h2>
+						<h2 className="mh3 mv0 dib white">GliderHunt</h2>
 					</div>
 					<MenuIcon onClick={() => this.menuClick()} />
 					<Menu display={'true'} />

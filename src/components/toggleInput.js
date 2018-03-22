@@ -17,22 +17,6 @@ const StyledInput = styled.input.attrs({
 	`}
 `;
 
-	// 	animation-name: smoothShow;
-	// 	animation-duration: 1s;
-
-	// 	@keyframes smoothShow {
-	// 	10% {width: 1rem;}
-	// 	20% {width: 2rem;}
-	// 	30% {width: 3rem;}
-	// 	40% {width: 4rem;}
-	// 	50% {width: 5rem;}
-	// 	60% {width: 6rem;}
-	// 	70% {width: 7rem;}
-	// 	80% {width: 8rem;}
-	// 	90% {width: 9rem;}
-	// 	100% {width: 10rem;}
-	// }
-
 const StyledDiv = styled.div.attrs({
 	className: "search-form dib"
 })`
@@ -51,27 +35,6 @@ const StyledDiv = styled.div.attrs({
 	`}
 
 `;
-
-	// @keyframes smoothShow {
-	// 	0% {
-	// 		display: none;
-	// 		opacity: 0;
-	// 	}
-
-	// 	1% {
-	// 		display: inline-block;
-	// 		opacity: 0;
-	// 		transform: scaleX(0);
-	// 	}
-
-	// 	100% {
-	// 		opacity: 1;
-	// 		transform: scaleX(1);
-	// 	}
-	// }
-
-	// animation-name: smoothShow;
-	// animation-duration: 1s;
 
 export default class ToggleInput extends React.Component {
 	constructor(props) {

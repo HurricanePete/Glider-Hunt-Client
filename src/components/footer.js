@@ -34,7 +34,7 @@ export default class Footer extends React.Component {
 							<a href="/">About</a>
 						</li>
 						<li className="footer-links">
-							<a href="/">Contact Us</a>
+							<a href="mailto:hello@gliderhunt.com">Contact Us</a>
 						</li>
 					</ul>
 				</div>

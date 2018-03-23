@@ -66,11 +66,11 @@ div.browser-tile > span > i {
 }
 
 .training:after {
-	background-image: url(../static-photos/glider-brands.jpg);
+	background-image: url(../static-photos/glider-sizes.jpg);
 }
 
 .gear:after {
-	background-image: url(../static-photos/glider-sizes.jpg);
+	background-image: url(../static-photos/glider-brands.jpg);
 }
 
 @media only screen and (min-width: 1000px) {

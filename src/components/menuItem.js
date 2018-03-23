@@ -1,5 +1,8 @@
 import React from 'react';
+import {connect} from 'react-redux';
 import styled from 'styled-components';
+
+import {setBannerToggle} from '../actions/app';
 
 const MenuListItem = styled.li.attrs({
 	className: 'link'
@@ -13,26 +16,34 @@ const MenuListItem = styled.li.attrs({
 	}
 `;
 
-export default class MenuItem extends React.Component {
+export class MenuItem extends React.Component {
+
+	toggleModal(event) {
+		event.preventDefault();
+		this.props.dispatch(setBannerToggle());
+	}
+
 	render() {
 		return(
 			<ul className="ma0 pa0" >
 				<MenuListItem>
-					<a className="ul-hover" href="/"><i className="fas fa-search"></i></a>
+					<a className="ul-hover" href="/" onClick={e => this.toggleModal(e)}><i className="fas fa-search"></i></a>
 				</MenuListItem>
 				<hr className="w-25"/>
 				<MenuListItem>
-					<a className="ul-hover" href="/">Reviews</a>
+					<a className="ul-hover" href="/" onClick={e => this.toggleModal(e)}>Reviews</a>
 				</MenuListItem>
 				<hr className="w-25"/>
 				<MenuListItem>
-					<a className="ul-hover" href="/">Blog</a>
+					<a className="ul-hover" href="/" onClick={e => this.toggleModal(e)}>Blog</a>
 				</MenuListItem>
 				<hr className="w-25"/>
 				<MenuListItem>
-					<a className="ul-hover" href="/">Login</a>
+					<a className="ul-hover" href="/" onClick={e => this.toggleModal(e)}>Login</a>
 				</MenuListItem>
 			</ul>
 		)
 	}
 }
+
+export default connect()(MenuItem);

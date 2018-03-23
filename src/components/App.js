@@ -1,5 +1,7 @@
 import React from 'react';
 
+
+import Modal from './modal';
 import Nav from './nav';
 import Hero from './hero';
 import BrowseBy from './browseBy';
@@ -13,6 +15,7 @@ export default class App extends React.Component {
     render() {
         return(
             <div>
+                <Modal />
                 <Nav />
                 <main className="">
                   <Hero />

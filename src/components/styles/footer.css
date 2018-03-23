@@ -63,6 +63,10 @@ li.footer-links > a:hover::after {
 		margin-bottom: 1rem;
 	}
 
+	li.footer-links > a:hover::after{
+		width: 0;
+	}
+
 	li.footer-links::after {
 		margin-bottom: 0;
 	}

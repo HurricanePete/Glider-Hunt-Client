@@ -15,7 +15,11 @@ a {
 	text-decoration: none;
 }
 
-div.logo {
+a:visited {
+  color:  unset;
+}
+
+div.logo, a.logo {
   display: flex;
   align-items: center;
 }
@@ -26,10 +30,6 @@ div.image-wrapper {
   background-color: white;
   padding: 0.45rem;
   border-radius: 50%;
-}
-
-div.image-wrapper:hover {
-  cursor: pointer;
 }
 
 div.line-dec {
@@ -80,4 +80,14 @@ button.submit:hover {
   width: 100%;
   padding: 1rem;
   background-color: rgba(0,0,0,0.5);
+}
+
+.hidden {
+  display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+    div.line-dec {
+        display: none;
+    }
 }

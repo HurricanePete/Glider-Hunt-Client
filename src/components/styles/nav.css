@@ -76,4 +76,8 @@ nav ul > li:last-child::after {
 		margin-bottom: 	0;
 		padding-bottom: 1rem;
 	}
+
+	nav ul > li > a:hover::after {
+		width: 0;
+	}
 }

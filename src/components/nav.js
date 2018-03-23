@@ -33,10 +33,12 @@ export default class Nav extends React.Component {
 			<StyledNavigation display={show ? 1 : 0}>
 				<div className={"nav-contents col-12 clear-float center tl " + (show ? "bb bw1 b--white" : "")}>
 					<div className="logo dib">
-						<div className="image-wrapper dib" title="Home">
-							<img className="" src={Logo} alt="Glider Hunt Logo" />
-						</div>
-						<h2 className="mh3 mv0 dib white">GliderHunt</h2>
+						<a href="/">
+							<div className="image-wrapper dib" title="Home">
+								<img className="" src={Logo} alt="Glider Hunt Logo" />
+							</div>
+							<h2 className="mh3 mv0 dib white">GliderHunt</h2>
+						</a>
 					</div>
 					<MenuIcon onClick={() => this.menuClick()} />
 					<Menu display={'true'} />

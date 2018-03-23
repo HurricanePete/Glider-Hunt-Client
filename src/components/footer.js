@@ -1,5 +1,8 @@
 import React from 'react';
+import {connect} from 'react-redux';
 import styled from 'styled-components';
+
+import {setBannerToggle} from '../actions/app';
 
 import './styles/footer.css';
 
@@ -18,23 +21,30 @@ const StyledFooter = styled.footer.attrs({
 	overflow: hidden;
 `;
 
-export default class Footer extends React.Component {
+export class Footer extends React.Component {
+	toggleModal(event) {
+		event.preventDefault();
+		this.props.dispatch(setBannerToggle());
+	}
+
 	render() {
 		return(
 			<StyledFooter>
 				<div className="footer-contents col-8 clear-float">
-					<div className="logo dib">
-						<div className="image-wrapper dib" title="Home">
-							<img className="" src={Logo} alt="Glider Hunt Logo" />
-						</div>
-						<p className="pl2">GliderHunt, Inc.</p>
+					<div className="dib">
+						<a className="logo" href="/">
+							<div className="image-wrapper dib" title="Home">
+								<img className="" src={Logo} alt="Glider Hunt Logo" />
+							</div>
+							<p className="pl2 dib">GliderHunt, Inc.</p>
+						</a>
 					</div>
 					<ul className="footer-list list">
 						<li className="footer-links">
-							<a href="/">About</a>
+							<a href="/" onClick={e => this.toggleModal(e)}>About</a>
 						</li>
 						<li className="footer-links">
-							<a href="/">Contact Us</a>
+							<a href="/" onClick={e => this.toggleModal(e)}>Contact Us</a>
 						</li>
 					</ul>
 				</div>
@@ -42,3 +52,5 @@ export default class Footer extends React.Component {
 		)
 	}
 }
+
+export default connect()(Footer);

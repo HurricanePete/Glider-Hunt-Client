@@ -7,7 +7,6 @@
 }
 
 .row {
-	max-width: 1920px;
 	padding-left: 1.041666%;
 	padding-right: 1.041666%;
 	margin: 0 auto;
@@ -22,7 +21,12 @@
 	clear: both;
 }
 
-.col-3, .col-4, .col-6, .col-8, .col-9, .col-12 {
+.col-3, .col-4, .col-6, .col-8, .col-9 {
+	width: 100%;
+	max-width: 1200px;
+}
+
+.col-12 {
 	width: 100%;
 }
 

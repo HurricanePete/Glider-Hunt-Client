@@ -1,11 +1,14 @@
 section.hero {
-	border-bottom: 1px solid #00203a;
-	background-image: url(../static-photos/top-shot_edit.jpeg);
-	height: calc(98vh - 72px);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	height: calc(98vh - 72px);
+	max-height: 1469px;
+	border-bottom: 1px solid #00203a;
+	background-image: url(../static-photos/top-shot_edit.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 section.hero > h1, section.hero > h2  {

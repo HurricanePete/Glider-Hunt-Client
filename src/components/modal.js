@@ -19,7 +19,6 @@ const StyledModal = styled.section.attrs({
 	overflow: auto;
 	background-color: rgba(0,0,0,0.4);
 
-
 	${props => props.display && css`
 		display: block;
 	`}
@@ -78,7 +77,7 @@ export class Modal extends React.Component{
 	render() {
 		const {modalDisplay} = this.props;
 		return(
-			<StyledModal display={modalDisplay} >
+			<StyledModal display={modalDisplay ? 1 : 0} >
 				<ModalContent>
 					<CloseButtton onClick={e => this.toggleModal(e)}>&times;</CloseButtton>
 					<Construct></Construct>

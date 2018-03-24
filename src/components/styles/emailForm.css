@@ -29,18 +29,10 @@ form.signup > input::placeholder {
 	color: lightgrey;
 }
 
-form.signup > button {
-	padding: 1rem 2rem;
-	font-size: 25px;
-}
-
 @media only screen and (max-width: 1000px) {
 	form.signup > input {
 		width: 100%;
+		margin-right: 0;
     	margin-bottom: 8px;
-	}
-
-	form.signup > button {
-		width: 100%;
 	}
 } 

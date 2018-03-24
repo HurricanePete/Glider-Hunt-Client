@@ -27,6 +27,7 @@ const ButtonSide = styled.button.attrs({
 	border-radius: 2px;
 	background-color: peru;
 	color: white;
+	width: 100%;
 	height: 60px;
 	padding: 1rem 2rem;
 	font-size: 25px;
@@ -48,8 +49,9 @@ const CheckSide = styled.div.attrs({
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: green;
+	width: 100%;
 	height: 60px;
+	background-color: green;
 	color: white;
 	transition: all 0.35s ease-in-out;
 

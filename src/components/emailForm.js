@@ -7,8 +7,6 @@ import {setSignupStatus, postContact} from '../actions/app';
 
 import './styles/emailForm.css';
 
-//<button className="submit" type="submit">Sign Me Up</button>
-
 export class EmailForm extends React.Component {
 	constructor(props) {
 		super(props);

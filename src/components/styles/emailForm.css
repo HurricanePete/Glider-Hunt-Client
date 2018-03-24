@@ -1,5 +1,7 @@
 form.signup {
+	position: relative;	
 	text-align: center;
+	perspective: 1000px;
 }
 
 form.signup > h2 {

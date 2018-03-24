@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 import Modal from './modal';
 import Nav from './nav';
 import Hero from './hero';

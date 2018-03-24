@@ -27,10 +27,10 @@ const StyledModal = styled.section.attrs({
 const ModalContent = styled.div.attrs({
 	className: 'col-6'
 })`
-	position: absolute;
+	position: sticky;
 	top: 30vh;
-	left: 0;
-	right: 0;
+	left: 0vh;
+	right: 0vh;
 	background-color: ghostwhite;
 	float: none;
 	margin: 0 auto;

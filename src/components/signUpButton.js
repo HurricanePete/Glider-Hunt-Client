@@ -2,8 +2,6 @@ import React from 'react';
 import {connect} from 'react-redux';
 import styled, {css} from 'styled-components';
 
-import {setSignupStatus, postContact} from '../actions/app';
-
 const StyledButton = styled.div.attrs({
 	className: ''
 })`

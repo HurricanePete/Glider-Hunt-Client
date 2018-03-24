@@ -1,11 +1,17 @@
 form.signup {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 	text-align: center;
+	perspective: 1000px;
 }
 
 form.signup > h2 {
+	width: 100%;
 	color: white;
 	text-transform: uppercase;
 	font-weight: bold;
+	order: 1;
 }
 
 form.signup > input {
@@ -16,24 +22,17 @@ form.signup > input {
 	color: white;
 	border: none;
 	margin-right: 8px;
+	order: 2;
 }
 
 form.signup > input::placeholder {
 	color: lightgrey;
 }
 
-form.signup > button {
-	padding: 1rem 2rem;
-	font-size: 25px;
-}
-
 @media only screen and (max-width: 1000px) {
 	form.signup > input {
 		width: 100%;
+		margin-right: 0;
     	margin-bottom: 8px;
-	}
-
-	form.signup > button {
-		width: 100%;
 	}
 } 

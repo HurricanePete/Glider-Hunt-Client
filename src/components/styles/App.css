@@ -42,7 +42,7 @@ div.line-dec {
   background-color: cornflowerblue;
 }
 
-button.submit {
+/*button.submit {
   border: none;
   border-radius: 2px;
   background-color: peru;
@@ -50,14 +50,14 @@ button.submit {
   text-transform: uppercase;
   font-weight: bold;
   transition: all 0.25s ease-out;
-}
+}*/
 
-button.submit:hover {
+/*button.submit:hover {
   background-color: white;
   color: #00203a;
   cursor: pointer;
   transform: scale(1.01);
-}
+}*/
 
 .parallax-glider {
   position: relative;

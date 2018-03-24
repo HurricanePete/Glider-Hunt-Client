@@ -13,7 +13,7 @@ export const appReducer = (state=initialState, action) => {
 	}
 	else if(action.type === actions.SET_SIGNUP_STATUS) {
 		return Object.assign({}, state, {
-			submitted: true
+			submitted: action.status
 		})
 	}
 

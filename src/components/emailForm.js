@@ -1,7 +1,7 @@
 import React from 'react';
 import {connect} from 'react-redux';
 
-import {SignUpButton} from './signUpButton';
+import SignUpButton from './signUpButton';
 
 import {setSignupStatus, postContact} from '../actions/app';
 
@@ -18,6 +18,7 @@ export class EmailForm extends React.Component {
 
 		this.handleChange = this.handleChange.bind(this);
 		this.handleSubmit = this.handleSubmit.bind(this);
+		this.clearInput = this.clearInput.bind(this);
 	}
 
 	handleChange(event) {
@@ -26,10 +27,15 @@ export class EmailForm extends React.Component {
 
 	handleSubmit(event) {
 		event.preventDefault();
-		this.props.dispatch(setSignupStatus());
-		console.log(this.state.email);
 		if(this.state !== '') {
 			this.props.dispatch(postContact(this.state.email));
+		}
+	}
+
+	clearInput(event) {
+		event.preventDefault();
+		if(this.props.submitted) {
+			this.props.dispatch(setSignupStatus(false));
 		}
 	}
 
@@ -38,11 +44,17 @@ export class EmailForm extends React.Component {
 		return(
 			<form className={"signup " + (modal ? "" : "col-8")} onSubmit={this.handleSubmit}>
 				<h2 className={modal ? "hidden" : ""}>Stay up to date as we grow.</h2>
-				<input placeholder="Your Email Here..." type="email" value={this.state.email} onChange={this.handleChange} />
+				<input placeholder="Your Email Here..." type="email" value={this.state.email} onChange={this.handleChange} onClick={this.clearInput} />
 				<SignUpButton />
 			</form>
 		);
 	}
 }
 
-export default connect()(EmailForm);
+const mapStateToProps = state => {
+	return {
+		submitted: state.submitted
+	}
+}
+
+export default connect(mapStateToProps)(EmailForm);

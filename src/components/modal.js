@@ -86,7 +86,7 @@ export class Modal extends React.Component{
 						<h2>We're still under construction.</h2>
 						<h3>Sign up below to stay up to date</h3>
 						<h2>or</h2>
-						<h3>Email us at: <span className="blue">about@gliderhunt.com</span></h3>
+						<h3>Email us at: <span className="blue">hello@gliderhunt.com</span></h3>
 					</header>
 					<EmailForm modal={true} />
 				</ModalContent>
